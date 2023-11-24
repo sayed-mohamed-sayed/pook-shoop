@@ -1,0 +1,93 @@
+
+
+.contactus {
+    background-color: #00000017;
+    margin-bottom: 40px;
+
+ }
+
+.contactus .contaner {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid 1px cadetblue;
+    width: 90%;
+    margin: auto;
+}
+
+.contactus .contaner p {
+    font-weight: bold;
+    color:#0000007d;
+}
+
+.contactus .contaner h4 {
+    font-weight: bold;
+}
+
+.contactus .sendcontact h1 {
+    text-align: center;
+
+    font-weight: bold;
+
+    color:
+        cadetblue;
+}
+
+.contactus .sendcontact {
+    width: 90%;
+    margin: auto
+}
+
+
+.contactus .sendcontact .input input {
+    width: 33%;
+    margin: 1px;
+}
+
+.contactus .textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactus textarea{
+    resize: none;
+
+}
+
+.contactus .textarea button {
+    width: 100px;
+    background-color: cadetblue;
+    color:
+        white;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+}
+
+
+@media (max-width:660px) {
+    .input input[type=text] {
+        width: 49.5% !important;
+    }
+    
+    @media (max-width:450px) {
+        .input input[type=text] {
+            width: 99% !important;
+        }
+    
+    }
+    .input input[type=email] {
+        width: 99.5% !important;
+    }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+  }
+  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}

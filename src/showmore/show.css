@@ -1,0 +1,82 @@
+.showmore{
+background-color:#0000001c;
+border-top: solid 1px darkcyan;
+margin-bottom: 10px;
+}
+.show{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+}
+.showmore .img{
+    width: 30%;
+    background-color:white;
+padding: 3px;
+margin: 2px;
+
+}
+
+.showmore .img img{
+    width: 100%;
+}
+.showmore .box{
+    width: 60%;
+}
+.showmore .details{
+width: 100%;
+margin: auto;
+}
+.showmore .show-buy{
+    border: solid 1px
+cadetblue;
+margin: auto;
+position: relative;
+width: 50%;
+border-radius: 5px;
+overflow: hidden;
+}
+.showmore .show-buy input{
+    width: 30%;
+height: 30px;
+border: none;
+position: absolute;
+left: 0;
+}
+/* input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.showmore .showmore input::-webkit-inner-spin-button{
+   
+    top: 0;
+    right: 0;
+    color:blueviolet;
+    padding: 0 6px;
+    font-size: 16px;
+    position:absolute;
+    background-color: blue;
+} */
+.showmore .show-buy button{
+    height: 30px;
+border: none;
+cursor: pointer;
+background-color:
+cadetblue;
+color:white;
+font-weight: bold;
+width: 100%;
+
+}
+.showmore .title{
+    font-size: large;
+font-weight: bolder;
+color: inherit;
+}
+.showmore .price span{
+    color: crimson;
+}
+.all{
+    justify-content: space-around;
+}

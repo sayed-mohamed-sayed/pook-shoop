@@ -1,0 +1,150 @@
+.products{
+    position: relative;
+top: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.productsing{
+    background-color: black;
+    color: white;position: relative;
+    top: 5px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+}
+.ikk{
+   
+        position: absolute;
+        right: 50px;
+cursor: pointer;
+}
+.product {
+    text-align: center;
+box-shadow: 0px 4px 2px 0px #0000004a;
+    margin-bottom:10px ;
+    flex-basis: 30%;
+    border-top: solid 1px #00000069
+}
+.product .details{display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.product img{
+    width: 300px;
+    height: 300px;
+    /* box-shadow: 1px 4px 7px 2px #0000004a;; */
+}
+.product button{
+    border: none;
+    width: 90%;
+    background-color: #217373;
+    color: white;
+    font-weight: bold;
+padding: 5px;
+margin: 2px;
+}
+.productbuy{
+    text-align: center;
+    box-shadow: 0px 4px 2px 0px #0000004a;
+        margin-bottom:10px ;
+        flex-basis: 30%;
+        border-top: solid 1px #00000069;
+        border: solid 1px #00000054;
+    margin: 10px;
+}
+.productbu{
+    text-align: center;
+    box-shadow: 0px 4px 2px 0px #0000004a;
+        margin-bottom:10px ;
+        flex-basis: 30%;
+        border-top: solid 1px #00000069;
+        border: solid 1px #00000054;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+.removebuy{
+    width: 150px !important;
+    border-radius: 3px;
+}
+.productbuy p{
+    border:  1px solid #0000001f;
+}
+.plus{
+    width: 28px !important;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.inp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.opp{
+    text-align: center;
+
+}
+.opp button{
+    border: none;
+    width: 60%;
+    background-color: #217373;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 2px;
+
+}
+
+.oil{
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+
+}
+.oil p{
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+.oil p:hover{
+    color:#217373;
+}
+.oil a{
+    text-decoration: none;
+}
+
+/* loginin */
+
+.contanerlogin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+.contanerlogin .box{
+    width: 60%;
+}
+.contanerlogin .box input{
+    width: 100%;
+    outline:none ;
+    margin: 1px;
+    padding: 5px;
+}
+
+#button{
+    
+    color: #217373;
+    font-weight: bolder;
+}
+
+
+

@@ -1,0 +1,122 @@
+.buy-cart{
+top: 100px;
+position: relative;
+margin: 5px;
+margin-bottom: 160px;}
+.buy-cart .buy{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+position: relative;
+top: 15px;
+margin: 5px;
+width: 95%;
+height: 250px;
+margin-bottom: 50px;
+}
+.buy-cart .buy::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color:
+    darkcyan;
+    display: block;
+    margin: 5px;
+    position: absolute;
+    bottom: -26px;
+}
+.buy .contaner{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+width: 50%;
+}
+.buy .contaner .img{
+    width: 100%;
+    height: 100%;
+}
+.buy .contaner .img img{
+ width: 250px;
+ height: 90%;
+ padding: 5PX;
+ border-radius: 20px;
+}
+
+.header-buy{
+    font-weight: bold;
+border-bottom: solid 3px
+darkcyan;
+width:fit-content;
+}
+.buy-cart .title{
+    width: 100%;
+}
+.buy-cart .title h3{
+    font-size: large;
+font-weight: bold;
+}
+.buy .quantity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.quant{
+    display: flex;
+    align-items: start;
+}
+.quant button{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    border: none;
+    margin: 2px;
+}
+.buy-cart  .delet{
+ position: absolute;
+top: 0px;
+right: 21px;
+color: white;
+    background-color: crimson;
+    border-radius: 6px;
+cursor: pointer;
+width: 60px;
+    text-align: center;
+}
+
+@media (max-width:950px){
+    .buy .img img ,.title h3{
+       width: 220px !important;
+       font-size: small !important;
+   }
+}
+@media (max-width:490px){
+    .buy .img img ,.title h3{
+       width: 190px !important;
+       font-size: small !important;
+   }
+}
+        @media (max-width:415px){
+            .buy .img img ,.title h3{
+               width: 180px !important;
+               font-size: small !important;
+           }
+        }
+
+        @media (max-width:600px){
+            .buy .contaner{
+                flex-direction: column;
+                top: -50px;
+                position: relative;
+           }
+        }
+
+        @media (max-width:600px){
+            .buy .quantity{
+                top: -50px;
+                position: relative;
+           }
+        }

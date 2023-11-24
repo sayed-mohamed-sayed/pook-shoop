@@ -1,0 +1,65 @@
+.author{
+    position: relative;
+
+    margin-bottom: 100px;top: 30px;
+}
+.author .input{
+    width: 90%;
+margin: auto;
+}
+.author .input input{
+    width: 100%;
+    border-radius: 40px;
+    /* border: none;
+    border: solid 1px cadetblue; */
+}
+.author .authors{
+ display: flex;
+justify-content: center;
+text-align: center;
+flex-wrap: wrap;
+top: 50px;
+position: relative;
+}
+.author .authors .box-author{
+   
+        flex-basis: 30%;
+        margin: 15px;
+        box-shadow: 0px 3px 6px -1px black;
+        height: 300px;
+        position: relative;
+        background-color: #0000001a;
+        border-radius: 5px;
+}
+.author .authors .box-author img{
+    width: 300px;
+height: 200px;
+cursor: pointer;
+    padding: 5px;
+}
+.author .authors .box-author h3{
+    position: absolute;
+    top: 90%;
+transform: translate(-50% ,-50%);
+left: 50%;
+}
+.author .authors .box-author::after{
+    content: "";
+    display: block;
+    width: 280px;
+    height: 2px;
+    background-color:
+    darkgray;
+    margin: auto;
+    margin-top: 20px;
+}
+@media (max-width:975px) {
+    .author .authors .box-author{
+   
+        flex-basis: 45%;
+        margin: 15px;
+        box-shadow: 0px 3px 6px -1px black;
+        height: 300px;
+        position: relative;
+}
+}

@@ -1,0 +1,269 @@
+
+.slider-contaner{
+    position: relative;
+    overflow: hidden;
+    }
+.imgcontaner{
+    display: flex;
+    width: 100%;
+    height: 450px;
+        text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 1s;
+}
+.imgcontaner img{
+    width: 230px;
+    height: 250px;
+}
+.slider-contaner .plus{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    background-color: lightslategrey;
+    left: 20px;
+}
+.slider-contaner .min{
+    position: absolute;
+    background-color: lightslategrey;
+    top: 50%;
+    z-index: 2;
+    right: 20px;
+}
+.image{
+    border: solid 1px black;
+    margin: 5px;
+    padding: 10px;
+    height: 440px;
+}
+.image .title{
+    
+    border-bottom:1px solid #00000070;
+}
+.image .rat {
+    text-align: center;
+color:#9f9f31;
+cursor: pointer;
+font-size: large;
+font-weight: bold;
+
+}
+.rat img{
+    width: 30px;
+    height: 30px;
+   
+}
+.image .price{
+    font-size: large;
+font-weight: bold;
+color:
+crimson;
+}
+.image .buy{
+    display: flex;
+justify-content: space-around;
+text-align: center;
+align-items: center;
+color: b;
+font-weight: bold;
+}
+
+.image .buy p{
+    cursor: pointer;
+}
+
+
+.slide-full{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    background-color:
+    #7d7777a1;
+    z-index: 6;
+}
+
+
+.slide-full .image{
+    background-color:
+black;
+position: fixed;
+top: 50%;
+bottom: 0px;
+text-align: center;
+transform: translate(-50% ,-50%);
+z-index: 7;
+left: 50%;
+width: 60%;
+height: 60%;
+  
+}
+
+.dell h3{
+    z-index: 99;
+    background-color: brown;
+    color: black;
+    position: absolute;
+}
+
+
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    background-color:
+    #7d7777a1;
+    z-index: 6;
+}
+
+.page .imag{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    background-color:
+    cadetblue;
+    margin: auto;
+    z-index: 9999999;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    left: 50%;
+    
+}
+.page .imag h3{
+    top: 5px;
+position: absolute;
+right: 20px;
+background-color:red;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+color:
+white;
+font-weight: bold;
+cursor: pointer;
+}
+.page img{
+    width: 85%;
+height: 100%;
+position: relative;
+left: 10px;
+}
+.page .box{
+    width: 50%;
+    height: 100%;
+display: flex;
+text-align: start;
+flex-direction: column;
+top: 100px;
+    position: relative;
+}
+.page .box .title p{
+    font-size:larger;
+font-weight: bold;
+}
+.page .box .rating p{
+    color:yellow;
+font-weight: bold;
+cursor: pointer;
+}
+.page .box .price p{
+    font-size: large;
+font-weight: bold;
+}
+.page .box .price span{
+    color: crimson;
+}
+.page .box .buycart {
+    display: flex;
+}
+.page .box .buycart input{
+    width: 90px;
+    border: none;
+    height: 25px;
+margin: 3px;
+border-radius: 3px;
+
+}
+.page .box .buycart button{
+    border: solid 1px black;
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+    width: 100px;
+    border-radius: 3px;
+    font-weight: bold;}
+    .page .box .details{
+        text-align: start;
+        position: relative;
+        right: 15px;
+background-color:teal;
+color:white;
+font-weight: bold;
+text-align: center;
+border-radius: 5px;
+cursor: pointer;
+    }
+.page .buy-cart button{
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+    width: 200px;
+    border-radius: 3px;
+    font-weight: bold   
+}
+
+.page .img{
+width: 90%;
+height: 90%;
+}
+
+.buy-carts{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+}
+
+
+.buy-carts button{margin-top: 26px;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+}
+
+@media (max-width:415px){
+.imag{
+       width: 97% !important;
+       
+    }
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    
+    width: 316px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+    display: block;
+}
+  @keyframes l1 {
+    0% {background-position: right}
+  }
+  .loading{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    position: relative;
+top: 100px;  
+}
