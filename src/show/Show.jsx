@@ -9,7 +9,7 @@ import "./picture.css"
 import Bestseller from "../sliders/bestseller";
 function Show() {
   const [num, setnum] = useState(0);
-  const [title, settitle] = useState([{id:1 , img:"./book.jpg" ,title:"Book Shop"} 
+  const [title, settitle] = useState([{id:1 , img:"./Book.jpg" ,title:"Book Shop"} 
   ,{id:2 , img:"imagee.jpg" ,title:"Hello My Friend"} 
   ,{id:3, img:"./images.jpg"  ,title:"Book Shop"}]);
 const handel=(direction)=>{           
