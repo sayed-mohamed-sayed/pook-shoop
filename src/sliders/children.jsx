@@ -1,18 +1,12 @@
 
 import * as React from "react";
-import { NavLink, Link } from "react-router-dom";
 import { useState,useEffect } from "react";
 import "./slider.css"
 import { useDispatch, useSelector } from "react-redux";
-import OnSlide from "./onslide";
-import { addproduct ,removeitem,remove,adds} from "../redux/ProductSlice";
 import {BsCartDash,BsJustify} from 'react-icons/bs';
 import {AiFillEye,AiOutlineFrown ,AiFillEnvironment,AiFillPhone, AiOutlineArrowRight} from "react-icons/ai"
 import { fetchproduct } from "../redux/ProductSlice";
-import Fiction from "./fiction";
-import Children from "./children";
-// import OnSlidetf from "./books/b/hj";
-function Bestseller({ data }) {
+function Children() {
     const [num, setnum] = useState(0);
     const [adddata, setadddata] = useState("")
     const [rat, setrat] = useState([
@@ -58,10 +52,7 @@ function Bestseller({ data }) {
         }
     }
 
-    const add = (i) => {
-        setadddata(i)
-        dispatch(adds())
-    }
+   
 
     return (
         <>
@@ -73,7 +64,7 @@ function Bestseller({ data }) {
             </div>
         ) : null
         }
-        <h1>Bestsellers</h1>
+        <h1>Children</h1>
             <button className="plus" disabled={num == 4} onClick={() => handel("left")}> &lsaquo;</button>
 
 
@@ -99,11 +90,11 @@ Product.books &&Product.books.map((i ,o) => (
                            }
                             </div>
                             <div className="price">
-                                <p>price:<span>{i.price}</span></p>
+                            <p>price:<span>{i.price}</span></p>
                             </div>
                             <div className="buy">
-                                <p onClick={() => add(i)}><AiFillEye/></p>
-                                <p onClick={() => dispatch(addproduct( i))}><BsCartDash/></p>
+                                <p><AiFillEye/></p>
+                                <p><BsCartDash/></p>
                             </div>
                         </div>
                     ))
@@ -113,12 +104,9 @@ Product.books &&Product.books.map((i ,o) => (
 
             </div>
             <button className="min" disabled={num == -3} onClick={() => handel("right")} > &rsaquo;</button>
-<OnSlide data={adddata} />
         </div>
-            <Fiction/>
-            <Children/>
         </>
     );
 }
 
-export default Bestseller;
+export default Children;

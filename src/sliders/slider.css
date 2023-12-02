@@ -2,6 +2,13 @@
 .slider-contaner{
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
+
+    }
+    .slider-contaner h1{
+        margin-left: 10px;
+    width: fit-content;
+    border-bottom: solid 2px darkcyan;
     }
 .imgcontaner{
     display: flex;
@@ -57,8 +64,10 @@ font-weight: bold;
 .image .price{
     font-size: large;
 font-weight: bold;
-color:
-crimson;
+color:black;
+}
+.image .price span{
+    color: crimson;
 }
 .image .buy{
     display: flex;
@@ -125,8 +134,8 @@ height: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 95%;
     background-color:
     cadetblue;
     margin: auto;
@@ -155,15 +164,14 @@ cursor: pointer;
     width: 85%;
 height: 100%;
 position: relative;
-left: 10px;
 }
 .page .box{
-    width: 50%;
+    width: 80%;
     height: 100%;
 display: flex;
 text-align: start;
 flex-direction: column;
-top: 100px;
+top: 50px;
     position: relative;
 }
 .page .box .title p{
@@ -178,6 +186,7 @@ cursor: pointer;
 .page .box .price p{
     font-size: large;
 font-weight: bold;
+
 }
 .page .box .price span{
     color: crimson;
@@ -212,6 +221,10 @@ text-align: center;
 border-radius: 5px;
 cursor: pointer;
     }
+    .page .box .details{
+        text-align: start;
+    padding-left: 4px;
+    }
 .page .buy-cart button{
     border: none;
     cursor: pointer;
@@ -222,8 +235,8 @@ cursor: pointer;
 }
 
 .page .img{
-width: 90%;
-height: 90%;
+    width: 80%;
+    height: 100%;
 }
 
 .buy-carts{
@@ -247,23 +260,64 @@ height: 90%;
        
     }
 }
-/* HTML: <div class="loader"></div> */
-.loader {
-    
-    width: 316px;
-    aspect-ratio: 4;
-    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
-    clip-path: inset(0 100% 0 0);
-    animation: l1 1s steps(4) infinite;
-    display: block;
+
+@media (max-width:860px) {
+    .page .box .title p{
+        font-size:medium;}
+        .rat img{
+            width: 20px;
+            height: 20px;
+           
+        }
+        .page .box .price p{
+            font-size:medium;
+        }
+        .page .box .details{
+            font-size: medium;
+        }.buy-carts button{margin-top: 20px;}
+
 }
-  @keyframes l1 {
-    0% {background-position: right}
-  }
+
+
+@media (max-width:700px) {
+    .page .box .title p{
+        font-size:small;
+    }
+        .rat img{
+            width: 15px;
+            height: 15px;
+           
+        }
+        .page .box .price p{
+            font-size:small;
+        }
+        .page .box .details{
+            font-size: small;
+        }.buy-carts button{
+            margin-top: 10px;
+        }
+
+}
+
+
+@media (max-width:345px) {
+        .page .box .details{
+            top: -10px;
+        }.buy-carts button{
+            margin-top:0px;
+        }
+
+}
+
+
   .loading{
     width: 100%;
     text-align: center;
     height: 100%;
     position: relative;
 top: 100px;  
+font-size: x-large;
+letter-spacing: 10px;
 }
+
+

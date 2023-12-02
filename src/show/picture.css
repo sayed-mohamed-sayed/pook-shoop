@@ -19,11 +19,22 @@ transition: 1s all ;}
 
     width: 100%;
     height: 100%;
+    position: relative;
 }
+.slideimg .img p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 35px;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 10px;}
 .slideimg .img img{
     width: 100vw;
     height: 100%;
     overflow: hidden;
+
 }
 .plus{
     position: absolute;

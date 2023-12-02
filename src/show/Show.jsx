@@ -31,7 +31,7 @@ if (direction==="right") {
 {
   title.map((i)=>(
     <div key={i.id} className="img">
-
+      <p>{i.title}</p>
       <img  src={i.img} alt="image"/>
     </div>
 

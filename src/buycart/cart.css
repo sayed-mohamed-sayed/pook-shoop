@@ -48,6 +48,8 @@ width: 50%;
 border-bottom: solid 3px
 darkcyan;
 width:fit-content;
+padding-bottom: 3px;
+    margin: 7px;
 }
 .buy-cart .title{
     width: 100%;
@@ -111,6 +113,10 @@ width: 60px;
                 flex-direction: column;
                 top: -50px;
                 position: relative;
+           }
+           .contaner .img img{
+            right: 35px;
+            position: relative;
            }
         }
 
